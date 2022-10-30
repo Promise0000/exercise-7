@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "green . ."     
+    "yellow red blue"
+    ". . ."
+    "orange . .";
+}
+#green {
+    grid-area: green;
+    grid-column: 1 /span 3;
+}
+#yellow {
+    grid-area: yellow;
+    grid-row: 2 / span 2;
+    display: grid;
+}
+#red {
+    grid-area: red;
+    display: grid;
+    grid-row: 2 / span 2;
+}
+#blue {
+    grid-area: blue;
+    grid-row: 2 / span 3;
+}
+#orange {
+    grid-area: orange;
+    grid-column: 1 / span 2;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+li:first-child {
+    padding: 7% 25% 7% 2%;
+    }
+    li:nth-child(2) {
+        padding: 7% 25% 7% 2%;
+    }
+    li:nth-child(3) {
+        padding: 7% 25% 7% 2%;
+    }
+    li:last-child {
+        padding: 7% 25% 7% 2%;
+    }
